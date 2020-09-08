@@ -8,6 +8,13 @@ public class ViewController: UIViewController {
   @IBOutlet public var inputDrawView: DrawView!
   @IBOutlet public var mirrorDrawViews: [DrawView]!
 
+  //MARK: -View Lifecycle
+  public override func viewDidLoad() {
+    super.viewDidLoad()
+    mirrorDrawViews.forEach { inputDrawView.addDelegate($0)
+    }
+  }
+  
   // MARK: - Actions
   @IBAction public func animatePressed(_ sender: Any) {
     mirrorDrawViews.forEach { $0.copyLines(from: inputDrawView)   }
