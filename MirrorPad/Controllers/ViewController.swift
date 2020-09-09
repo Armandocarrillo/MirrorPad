@@ -2,6 +2,9 @@
 import UIKit
 
 public class ViewController: UIViewController {
+  
+  //MARK: - Properties
+  public lazy var shareFacade: ShareFacade = ShareFacade(entireDrawing: drawViewContainer, inputDrawing: inputDrawView, parentViewController: self)
 
   // MARK: - Outlets
   @IBOutlet public var drawViewContainer: UIView!
@@ -28,6 +31,7 @@ public class ViewController: UIViewController {
   }
 
   @IBAction public func sharePressed(_ sender: Any) {
+    shareFacade.presentShareController()
 
   }
 }

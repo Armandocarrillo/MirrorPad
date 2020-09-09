@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1003337724FA152E00A99820 /* Copying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003337624FA152E00A99820 /* Copying.swift */; };
+		104E3B8A2508815F00389427 /* DrawingSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E3B892508815F00389427 /* DrawingSelectionViewController.swift */; };
+		104E3B8C2508816500389427 /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E3B8B2508816500389427 /* ImageRenderer.swift */; };
+		104E3B8E2508818B00389427 /* DrawingSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 104E3B8D2508818B00389427 /* DrawingSelectionViewController.xib */; };
+		104E3B902508824A00389427 /* ShareFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E3B8F2508824A00389427 /* ShareFacade.swift */; };
 		1053992F2501C6990019542E /* AcceptInputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1053992E2501C6990019542E /* AcceptInputState.swift */; };
 		105399312501C6A90019542E /* AnimateState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105399302501C6A90019542E /* AnimateState.swift */; };
 		105399332501C6C50019542E /* ClearState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105399322501C6C50019542E /* ClearState.swift */; };
@@ -25,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		1003337624FA152E00A99820 /* Copying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copying.swift; sourceTree = "<group>"; };
+		104E3B892508815F00389427 /* DrawingSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingSelectionViewController.swift; sourceTree = "<group>"; };
+		104E3B8B2508816500389427 /* ImageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRenderer.swift; sourceTree = "<group>"; };
+		104E3B8D2508818B00389427 /* DrawingSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawingSelectionViewController.xib; sourceTree = "<group>"; };
+		104E3B8F2508824A00389427 /* ShareFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFacade.swift; sourceTree = "<group>"; };
 		1053992E2501C6990019542E /* AcceptInputState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptInputState.swift; sourceTree = "<group>"; };
 		105399302501C6A90019542E /* AnimateState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateState.swift; sourceTree = "<group>"; };
 		105399322501C6C50019542E /* ClearState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearState.swift; sourceTree = "<group>"; };
@@ -60,6 +68,16 @@
 				109122BF25081B9E0087591F /* MulticastDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		104E3B882508813A00389427 /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				104E3B892508815F00389427 /* DrawingSelectionViewController.swift */,
+				104E3B8B2508816500389427 /* ImageRenderer.swift */,
+				104E3B8F2508824A00389427 /* ShareFacade.swift */,
+			);
+			path = Facades;
 			sourceTree = "<group>";
 		};
 		1053992C2501C5E80019542E /* DrawView */ = {
@@ -107,6 +125,7 @@
 			children = (
 				42F35C4720449C9D00584FAD /* AppDelegate */,
 				42F35C4820449CA300584FAD /* Controllers */,
+				104E3B882508813A00389427 /* Facades */,
 				1003337324FA14E800A99820 /* Protocols */,
 				42F35C4A20449CB400584FAD /* Resources */,
 				42F35C4920449CAA00584FAD /* Views */,
@@ -136,6 +155,7 @@
 				1053992C2501C5E80019542E /* DrawView */,
 				42F35C3E20449C9A00584FAD /* LaunchScreen.storyboard */,
 				42F35C3920449C9A00584FAD /* Main.storyboard */,
+				104E3B8D2508818B00389427 /* DrawingSelectionViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104E3B8E2508818B00389427 /* DrawingSelectionViewController.xib in Resources */,
 				42F35C4020449C9A00584FAD /* LaunchScreen.storyboard in Resources */,
 				42F35C3D20449C9A00584FAD /* Assets.xcassets in Resources */,
 				42F35C3B20449C9A00584FAD /* Main.storyboard in Resources */,
@@ -223,9 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				105399312501C6A90019542E /* AnimateState.swift in Sources */,
+				104E3B902508824A00389427 /* ShareFacade.swift in Sources */,
 				42F35C3820449C9A00584FAD /* ViewController.swift in Sources */,
 				105399352501C6D60019542E /* CopyState.swift in Sources */,
 				424387E72044A1ED0056B653 /* LineShape.swift in Sources */,
+				104E3B8C2508816500389427 /* ImageRenderer.swift in Sources */,
+				104E3B8A2508815F00389427 /* DrawingSelectionViewController.swift in Sources */,
 				105399372501C6EF0019542E /* DrawViewState.swift in Sources */,
 				105399332501C6C50019542E /* ClearState.swift in Sources */,
 				1003337724FA152E00A99820 /* Copying.swift in Sources */,
